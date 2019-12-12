@@ -3,7 +3,7 @@
 .assets/
 
 # files
-README.txt
+project/VirtualHost-CentOS.md
 
 # extensions
 *.txt
