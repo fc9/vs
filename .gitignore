@@ -1,0 +1,9 @@
+# folders
+.vscode/
+.assets/
+
+# files
+README.txt
+
+# extensions
+*.txt
