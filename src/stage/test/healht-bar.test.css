@@ -1,0 +1,51 @@
+* {margin:0;border:0;padding:0;box-sizing:border-box}
+body {display:block;background-color:#222;text-align:center;
+font-family:roboto;color:#666;font-size:11px;}
+
+.vs-stage-healthbar-container {display:inline-block;position:relative;overflow:hidden;
+    background-color:#111;width:38vw;height:16px;}
+.vs-stage-healthbar-container>.bar {display:block;position:absolute;top:0;width:100%;height:100%}
+.vs-stage-healthbar-container>.bar.armor {z-index:9;background-color:green}
+.vs-stage-healthbar-container>.bar.health {z-index:8;background-color:lightblue}
+.vs-stage-healthbar-container>.bar.cure {z-index:7;background-color:#fff}
+.vs-stage-healthbar-container>.bar.damage {z-index:6;background-color:orangered}
+.vs-stage-healthbar-container>.bar.label {z-index:10;font-size:10px;color:#fff}
+/*debug* /
+.vs-stage-healthbar-container {overflow:initial}
+.vs-stage-healthbar-container>.bar {position:relative}
+/*end:debug*/
+
+.vs-stage-healthbar-container.team1>.label {text-align:left}
+.vs-stage-healthbar-container.team2>.label {text-align:right}
+.vs-stage-healthbar-container.team1>* {right:0}
+.vs-stage-healthbar-container.team2>* {left:0}
+
+button {border-radius:1em;color:#fff;cursor:pointer;width:60px;padding:.5em 0;margin:.3em}
+button.team1 {background-color:firebrick}
+button.team2 {background-color:dodgerblue}
+button.neutro {background-color:darkgreen}
+button#btn-fronze1,
+button#btn-fronze2 {font-size:1.5em;padding:.31em 0}
+
+.vs-stage-healthbar-animate-shake {
+    animation: hbshake 0.3s;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes hbshake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+
+      30%, 50%, 70% {
+        transform: translate3d(-3px, 0, 0);
+      }
+
+      40%, 60% {
+        transform: translate3d(3px, 0, 0);
+      }
+  }

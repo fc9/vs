@@ -1,0 +1,5 @@
+// objects
+
+var __config = new Object()
+
+__config.footer = "Create by Fabio Cabral. Code something nice!"
