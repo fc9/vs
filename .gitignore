@@ -11,7 +11,7 @@ lerna-debug.log
 # project files
 .assets
 project
-project/VirtualHost-CentOS.md
+#project/VirtualHost-CentOS.md
 
 # project ignores
 !.gitkeep
