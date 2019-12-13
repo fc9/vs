@@ -1,9 +1,36 @@
-# folders
-.vscode/
-.assets/
-
-# files
-project/VirtualHost-CentOS.md
-
 # extensions
 *.txt
+
+# temp files
+.DS_Store
+Thumbs.db
+Desktop.ini
+npm-debug.log
+lerna-debug.log
+
+# project files
+.assets
+project
+project/VirtualHost-CentOS.md
+
+# project ignores
+!.gitkeep
+*__temp
+node__modules
+docs
+coverage
+lib
+dist
+bundles/*/*.d.ts
+
+# emacs temp files
+*~
+\#*#
+
+# VSCode ignores
+.vscode
+pixi.code-workspace
+
+# Sublime text files
+*.sublime*
+*.*~*.TMP
