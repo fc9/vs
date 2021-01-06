@@ -1,6 +1,6 @@
 # Versus Game Engine - Sources
 
-Basicamente estudar outras engines e estrair tudo aquilo que possa servi de base. Mesclando tudo de bom encontrado.
+Basicamente estudar outras engines e extrair tudo aquilo que possa servi de base. Mesclando tudo de bom encontrado.
 
 ## Tasks
 
